@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Website.css">
+    <title>Christ - Home</title>
+
+    <style>
+        #History {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+        }
+        
+        #lm {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        #lm p {
+            text-align: center;
+            padding-left: 10px;
+            color: white;
+            white-space: normal;
+            font-size: 15px;
+        }
+        
+        h1,
+        h3 {
+            text-align: center;
+        }
+        
+        h2 {
+            padding: 5px;
+            color: white;
+            padding-left: 10px;
+            font-size: 19px;
+            text-align: center;
+        }
+        
+        #History p {
+            padding: 5px;
+            color: white;
+            padding-left: 10px;
+            font-size: 19px;
+            text-align: justify;
+        }
+        
+        a {
+            text-decoration: none;
+            color: orange;
+        }
+        
+        #text {
+            text-align: center;
+        }
+        
+        h3 p {
+            padding: 5px;
+            color: white;
+            padding-left: 10px;
+            font-size: 19px;
+            text-align: justify;
+        }
+        
+        @media (max-width: 960px) {
+            #lm {
+                position: relative;
+                bottom: 200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="w3-animate-left">
+
+    <!--Active Class-->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <!--Active Class-->
+
+    <br>
+
+    <div id="nav" class="w3-border" id="myDIV">
+
+        <ul class="RN">
+            <button type="button" disabled>
+                <li><i style="color:gold;" class="fa fa-home"></i><a class="btn active" href="Home.html">Home</a></li>
+            </button>
+            <li><a class="btn" href="History.html">History</a></li>
+            <li><a class="btn" href="Effect.html">Effect</a></li>
+            <li><a class="btn" href="Beliefs and Belivers.html">Beliefs</a></li>
+            <li><a class="btn" href="Others.html">More</a></li>
+        </ul>
+
+        <select class="select RN" size="1" name="links" onchange="window.location.href=this.value;">
+            <option>Go To...</option>
+            <option value="Home.html" type="option" disabled><i style="color:rgb(243, 230, 155)" class="fa fa-home"></i>Home</option>
+            <option value="History.html">History</option>
+            <option value="Effect.html">Effect</option>
+            <option value="Beliefs and Belivers.html">Beliefs</option>
+            <option value="Others.html">More</option>
+        </select>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="History" class="w3-border w3-card-4">
+        <h1 class="w3-text-amber">Welcome</h1>
+
+        <h2>Chris&#x25CF;ti&#x25CF;an&#x25CF;i&#x25CF;ty-<br>
+    		<span class="w3-text-orange">The religion based on the person and teachings of Jesus of Nazareth, or its beliefs and practices.</span><br><br>
+    	</h2>
+
+        <p>
+            This will be an expirence, a brief understanding of Christianity, through the History of Christ and his belivers to the ripple it has caused on the Earth, and human race. This, although simple, gives you the basics of Christianity and why there are so many believers, and what they believe in. Hopefully, pulling you in, and giving you a better look at the, sadly now, discuraged religon. Everything you read, I hope you take in, and you keep. Hopefully creating a new and nicer view of Christ.
+        </p>
+
+        <br>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="lm" class="w3-border-left w3-border-right w3-border-top">
+        <h3 class="w3-text-amber">Learn More</h3>
+        <p>
+            To get deeper understanding of this topic, I'll be pointing you to <a href="https://www.britannica.com/topic/Christianity" target="_blank" id="a">Britannica - Christianity</a> and <a href="http://www.bbc.co.uk/religion/religions/christianity/" target="_blank">BCC - Christianity</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

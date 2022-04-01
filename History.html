@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Website.css">
+    <title>Christ - History</title>
+
+    <style>
+        img {
+            float: right;
+        }
+        
+        #text {
+            background-color: #252839;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: default;
+            text-align: center;
+        }
+        
+        #History {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+        }
+        
+        #History p {
+            padding: 5px;
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+            padding-left: 10px;
+        }
+        
+        #History h1 {
+            text-align: center;
+        }
+        
+        #time {
+            border-radius: 5px;
+        }
+        
+        #text2 {
+            font-size: 20px;
+            font-family: Helvetica, Arial, Sans-Serif;
+            text-transform: uppercase;
+            color: #fe4902;
+            padding-left: 5px;
+        }
+        
+        #box {
+            border: solid white thin;
+            border-radius: 2px;
+        }
+        
+        #bq {
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+        }
+        
+        @media (max-width: 960px) {
+            img {
+                padding-right: 50px;
+                width: 300px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="w3-animate-left">
+
+    <!--Active Class-->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <!--Active Class-->
+
+    <br>
+
+    <div class="nav w3-border" id="nav" id="myDIV">
+
+        <ul class="RN">
+            <li><i style="color:gold;" class="fa fa-home"></i><a class="btn" href="Home.html">Home</a></li>
+            <button type="button" disabled>
+            <li><a class="btn active" href="History.html">History</a>    
+            </li>
+            </button>
+            <li><a class="btn" href="Effect.html">Effect</a></li>
+            <li><a class="btn" href="Beliefs and Belivers.html">Beliefs</a></li>
+            <li><a class="btn" href="Others.html">More</a></li>
+        </ul>
+
+        <select class="select RN" size="1" name="links" onchange="window.location.href=this.value;">
+            <option>Go To...</option>
+            <option value="Home.html"><i style="color:rgb(243, 230, 155)" class="fa fa-home"></i>Home</option>
+            <option value="History.html" type="option" disabled>History</option>
+            <option value="Effect.html">Effect</option>
+            <option value="Beliefs and Belivers.html">Beliefs</option>
+            <option value="Others.html">More</option>
+        </select>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="w3-border w3-card-4" id="History">
+        
+		<h1 class="w3-text-amber"> History </h1>
+		
+            <a href="http://www.biblicaljesus.org/" target="_blank"><img class="w3-image" src="Jesus1.png" alt="Jesus" id="image" width="289" height="400"></a>
+
+        <p>Christianity is the world's biggest religion, with about 2.4 billion adherents worldwide. It is based on the teachings of Jesus Christ who lived in the Holy Land 2,000 years ago. Followers of this religions are called, "Christians" and there are three main denomination:
+            <br>
+            <br>
+
+            <blockquote id="bq">
+                <ul style="list-style-type: circle">
+                    <li><span id="box" class="w3-tag"><a id="colour" href="https://www.britannica.com/topic/Roman-Catholicism" target="_blank">Catholic</a></span>with <i> 1.2 Billion Followers.</i>
+                        <br>
+                    </li>
+                    <li><span id="box" class="w3-tag"><a id="colour" href="https://www.britannica.com/topic/Protestantism"target="_blank" >Protestant</a> </span> with <i> 900 Million Followers.</i>
+                        <br>
+                    </li>
+                    <li><span id="box" class="w3-tag"><a id="colour" href="https://www.britannica.com/topic/Eastern-Orthodoxy" target="_blank">Eastern Orthadox</a></span> with <i>300 Million Followers.</i></br>
+                    </li>
+                </ul>
+            </blockquote>
+        </p>
+
+        <p>
+            Christianity began in 4 B.C. [Before Christ] with the birth of Jesus Christ. He lived in a Galilean village called Nazareth with his <i> Earthly</i> mother Mary and father Joseph. He is the son of God, the creator of the Universe. But he [Jesus] is also God. he lived in Nazareth until 27 C.E. (Common Era) [Or A.D Anno Domini "The Year of our Lord"] began his ministry, peaching and it has been said that Jesus, as a man, Jesus was a carpenter. And he died in Jerusalem on 33 A.D by crucifixion, only 6 years after he began his ministry; but that never stopped the spread of his word. But that's not the end of his story. Jesus, forty days after he died, he was resurrected when he was "carried up" into heaven, and he became God the Son, Christianity is a little strange, it's <a id="colour" href="https://www.britannica.com/topic/monotheism" target="_blank">monotheistic</a> but it has three God in one. There is God the Son, father, and Spirit. They are separate, but one and neither is the other.
+            <br>
+            <br> After his [Jesus Christ] death and rise, Christianity spread like a wildfire. All over the world, and finally around 35 A.D, it became its own religion, apart from Judaism. In 300 A.D, Rome, Constantine the Great and the First Council of Nicaea made Christianity a legal religion and was tolerated (Many disagreed). In Britain During the 4th Century, British Christianity became more visible but it had not yet won over the hearts and minds of the population. Pagan beliefs still abounded and Christianity was a minority faith. Years later, The Crusades began, many people believe it to be a horrible act caused by Christians. I think the opposite, if you look into the evidence, it fits the <a id="colour" href="https://www.mtholyoke.edu/acad/intrel/pol116/justwar.htm" target="_blank">Just War Principles.</a> As the Muslims started to take over the middle east and seized Jerusalem, coming for Europe. They were also committing barbaric acts of violence, and desecrating Jerusalem.
+            <br>
+            <br> The birth and creation of Protestantism began with a young man, named Martin Luther, <i>(not the black one)</i> he was a was a German professor of theology, composer, priest, monk, and a seminal figure in the Protestant Reformation. He rejected several teachings and practices of the Roman Catholic Church and wanted to change it. With his <a id="colour" href="http://www.luther.de/en/95thesen.html"> Ninety-Five Thesis</a>, that he defiantly nailed to the door of the Wittenberg Castle church. Starting up the Protestant Reform and leading to many other major things in Christianity, leaving him as a major figure head in Christian History.
+        </p>
+
+    </div>
+    <br>
+
+    <h2 id="text2">
+		Timeline of Christianity
+	</h2>
+
+    <div>
+
+        <iframe width="100%" height="400" id="time" class="w3-border w3-card-4" src="https://time.graphics/embed?v=1&id=93859" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    <br>
+
+</body>
+
+</html>
+    

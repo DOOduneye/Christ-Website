@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Website.css">
+    <title>Christ - B&B</title>
+
+    <style>
+        img {
+            float: right;
+        }
+        
+        #History {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+        }
+        
+        #History p {
+            padding: 5px;
+            color: #3E3E3E;
+        }
+        
+        h2,
+        h1 {
+            text-align: center;
+        }
+        
+        #listtype {
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+            list-style-type: circle;
+        }
+    </style>
+
+</head>
+
+<body class="w3-animate-left">
+
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <br>
+
+    <div id="nav" class="w3-border">
+
+        <ul class="RN">
+            <li><i style="color:gold" class="fa fa-home"></i><a class="btn" href="Home.html">Home</a></li>
+            <li><a class="btn" href="History.html">History</a></li>
+            <li><a class="btn" href="Effect.html">Effect</a></li>
+            <button type="button" disabled>
+                <li><a class="btn active" href="Beliefs and Belivers.html">Beliefs</a></li>
+            </button>
+            <li><a class="btn" href="Others.html">More</a></li>
+        </ul>
+
+        <select class="select RN" size="1" name="links" onchange="window.location.href=this.value;">
+            <option>Go To...</option>
+            <option value="Home.html"><i style="color:rgb(243, 230, 155)" class="fa fa-home"></i>Home</option>
+            <option value="History.html">History</option>
+            <option value="Effect.html">Effect</option>
+            <option value="Beliefs and Belivers.html" type="option" disabled>Beliefs</option>
+            <option value="Others.html">More</option>
+        </select>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="w3-border w3-card-4" id="History">
+
+		<h1 class="w3-text-amber">Beliefs</h1>
+		
+			<img src="Trinity.png">
+
+        <p id="text">
+				
+            <ul id="listtype">
+
+                
+                <li>The Bible is that the solely truthful, and ideal word of God, written by man with the leading of the Holy Spirit.
+                    <br>
+                    <br> </li>
+
+                <li>Christians are monotheistic, there's one God, in three, God the Father, God the Son, and God the Holy Spirit. <i>The Holy Trinity</i>
+                    <br>
+                    <br> </li>
+
+                <li>Christians believe the God of our Jesus Christ, in his virgin birth, in His virtuous life, in his miracles, in his majesty, he will future come to the earth in power and glory to rule one thousand years.
+                    <br>
+                    <br> </li>
+
+                <li>The blessed hope in the rapture of the Church at Christ's returning. The Church is all who believe Nazarene as their Savior.
+                    <br>
+                    <br> </li>
+
+                <li>The only means that of being cleaned from sin is thru forgiveness and faith within the precious blood of Christ. Senisble works alone won't get you into heaven.
+                    <br>
+                    <br> </li>
+
+                <li>We believe water sacrament by immersion. this can be a public show of the genuineness of your forgiveness.
+                    <br>
+                    <br> </li>
+
+                <li>Spiritual healing and delivery comes by the redemptive work of Christ on the cross. Isaiah 53:5b says, "By His wounds we are healed."
+                    <br>
+                    <br>
+                </li>
+
+                <li>The sacrament of the Holy Spirit is given to all or any believers at the instant of salvation. God wishes us to own a private relationship with Him and thru His Holy Spirit, we tend to speak to Him.
+                    <br>
+                    <br> </li>
+
+                <li>Christians believe the sanctifying power of the Holy Spirit's inward. The Christian will live a holy life.
+                    <br>
+                    <br>
+                </li>
+
+                <li>The beliefs of Christianity states the resurrection of the saved lost, the one to everlasting life and therefore the alternative to everlasting damnation. Then Nazarene can establish His eternal kingdom.
+                    <br>
+                    <br>
+                </li>
+
+            </ul>
+
+        </p>
+    </div>
+
+</body>
+
+</html>

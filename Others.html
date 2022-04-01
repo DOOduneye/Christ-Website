@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Website.css">
+    <title>Christ - More</title>
+
+    <style>
+        #History {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+        }
+        
+        #text {
+            padding: 5px;
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+            padding-left: 10px;
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        #tr {
+            text-decoration: underline;
+            color: #fe4902;
+            text-decoration-style: wavy;
+        }
+        
+        #back {
+            background-color: #252839;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 960px) {
+            #back {
+                overflow: scroll;
+                border-collapse: collapse;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="w3-animate-left">
+
+    <!--Active Class-->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <!--Active Class-->
+
+    <br>
+
+    <div id="nav" class="w3-border">
+
+        <ul class="RN">
+            <li><i style="color:gold" class="fa fa-home"></i><a class="btn" href="Home.html">Home</a></li>
+            <li><a class="btn" href="History.html">History</a></li>
+            <li><a class="btn" href="Effect.html">Effect</a></li>
+            <li><a class="btn" href="Beliefs and Belivers.html">Beliefs</a></li>
+            <button type="button" disabled>
+                <li><a class="btn active" href="Others.html">More</a></li>
+            </button>
+        </ul>
+
+        <select class="select RN" size="1" name="links" onchange="window.location.href=this.value;">
+            <option>Go To...</option>
+            <option value="Home.html"><i style="color:#f3e69b" class="fa fa-home"></i>Home</option>
+            <option value="History.html">History</option>
+            <option value="Effect.html">Effect</option>
+            <option value="Beliefs and Belivers.html">Beliefs</option>
+            <option value="Others.html" type="option" disabled>More</option>
+        </select>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div id="back" class="w3-border-left w3-border-right w3-border-top w3-card-4" id="History">
+
+        <h1 class="w3-text-amber">Positives and Negatives</h1>
+
+        <table class="w3-table w3-bordered">
+
+            <tr id="tr">
+                <th class="w3-border-right">Positive</th>
+                <th>Negative</th>
+            </tr>
+
+            <tr id="text">
+                <td class="w3-border-right">Literacy and education for the masses</td>
+                <td>Used as an excuse to commit evil acts. </td>
+            </tr>
+
+            <tr id="text">
+                <td class="w3-border-right">High regard for human life.</td>
+                <td>Holy Wars</td>
+            </tr>
+
+            <tr id="text">
+                <td class="w3-border-right">Civil liberties.</td>
+                <td>Jehovah's Witness</td>
+            </tr>
+
+            <tr id="text">
+                <td class="w3-border-right">Democratic Goverments</td>
+            </tr>
+
+            <tr id="text">
+                <td class="w3-border-right">Greater development of art and music.</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br>
+
+    <div id="back" id="History" class="w3-border-left w3-border-right w3-border-top w3-card-4">
+        <h2 class="w3-text-amber">Denominations</h2>
+
+        <table style="opacity:0.9" class="w3-table w3-bordered">
+
+            <tr style="text-decoration: underline; color:#fe4902; text-decoration-style: wavy;">
+                <th class="w3-border-right"></th>
+                <th class="w3-border-right">Catholic Church</th>
+                <th class="w3-border-right">Protestant Chruch</th>
+                <th>Eastern Orthadox Chruch</th>
+
+                <tr id="text">
+
+                    <td class="w3-border-right">Founder:</td>
+                    <td> Jesus Christ</td>
+                    <td> Martin Luther</td>
+                    <td> Paul Apostalate</td>
+
+                </tr>
+
+                <tr id="text">
+
+                    <td class="w3-border-right">Founding:</td>
+                    <td>27 A.D</td>
+                    <td>1517 A.D</td>
+                    <td>1054 A.D</td>
+
+                </tr>
+
+                <tr id="text">
+
+                    <td class="w3-border-right">Population:</td>
+                    <td>1,200,000,000</td>
+                    <td>900,000,000</td>
+                    <td>300,000,000</td>
+
+                </tr>
+
+                <tr id="text">
+
+                    <td class="w3-border-right">Mission: <span style="font-size: 8px;"><i> *These missions, are not subject to <br> only one of the churches.  But is the main purpose for each one*</i></span></td>
+                    <td>The Catholic Church’s mission is to
+                        <br> continue the work of Jesus Christ</td>
+                    <td>All believers should have independent
+                        <br> access to the Bible</td>
+                    <td>The attainment of peace, justice, freedom,
+                        <br> brotherhood and love between peoples</td>
+
+                </tr>
+
+                <tr id="text">
+
+                    <td class="w3-border-right">Chruch Structure:</td>
+                    <td>Pope → Cardinal → Archbishop →
+                        <br> Bishop → Priest → Deacon </td>
+                    <td>Senior Pastor → Pastors →
+                        <br> Elders or lay leaders → Deacons</td>
+                    <td>Bishop → Priest →
+                        <br> Deacon → The Minor Orders</td>
+
+                </tr>
+
+    </div>
+
+    <br>
+
+</body>
+
+</html>

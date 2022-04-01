@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Website.css">
+    <title>Christ - Effect</title>
+
+    <style>
+        img {
+            float: right;
+        }
+        
+        #History {
+            float: center;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+        }
+        
+        h3 {
+            color: #141414;
+            font-size: 19px;
+        }
+        
+        #History h1 {
+            text-align: center;
+        }
+        
+        #textcolor {
+            color: gold;
+            padding-left: 7px;
+            padding-right: 7px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        
+        #listtype {
+            list-style-type: circle;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        
+        #text {
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+            font-size: 15px;
+        }
+        
+        div video {
+            border: solid;
+            border-radius: 8px;
+        }
+        
+        #expand {
+            font-size: 20px;
+            font-family: Helvetica, Arial, Sans-Serif;
+            text-transform: uppercase;
+            color: #fe4902;
+            border-color: black;
+            background-color: transparent;
+            opacity: 0.6;
+            border-bottom: solid #808791;
+            padding-bottom: 3px;
+            border-radius: 4px;
+            text-align: center;
+            user-select: none;
+        }
+        
+        #text3 {
+            float: right;
+            text-align: left;
+            background-color: #252839;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+            padding: 3px;
+            cursor: auto;
+        }
+        
+        #text4 {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            text-shadow: 0px 0px 4px black;
+            white-space: normal;
+        }
+        
+        @media (max-width: 960px) {
+            video {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+        
+        #colourr {
+            color: #2B60DE;
+            text-decoration: none;
+            text-shadow: 0px 0px 4px #32435B;
+        }
+        
+        #number {
+            color: yellow;
+            text-shadow: 0px 0px 0px transparent;
+        }
+    </style>
+
+</head>
+
+<body class="w3-animate-left">
+
+    <!--Active Class-->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <!--Active Class-->
+
+    <br>
+
+    <div id="nav" class="w3-border">
+
+        <ul class="RN">
+            <li><i style="color:gold" class="fa fa-home"></i>
+                <a class="btn" href="Home.html"></i>Home</a>
+            </li>
+            <li><a class="btn" href="History.html">History</a></li>
+            <button type="button" disabled>
+                <li><a class="btn active" href="Effect.html">Effect</a></li>
+            </button>
+            <li><a class="btn" href="Beliefs and Belivers.html">Beliefs</a></li>
+            <li><a class="btn" href="Others.html">More</a></li>
+        </ul>
+
+        <select class="select RN" size="1" name="links" onchange="window.location.href=this.value;">
+            <option>Go To...</option>
+            <option value="Home.html"><i style="color:rgb(243, 230, 155)" class="fa fa-home"></i>Home</option>
+            <option value="History.html">History</option>
+            <option value="Effect.html" type="option" disabled>Effect</option>
+            <option value="Beliefs and Belivers.html">Beliefs</option>
+            <option value="Others.html">More</option>
+        </select>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="w3-border w3-card-4" id="History">
+        <h1 class="w3-text-yellow"> Effect </h1>
+
+        <h2 style="padding: 13px; font-size: 20px; color: #fe4902">Christianity, over its 2,000 years of existance has had and is continuiously having a massive effect on people and things everywhere. Today the affects of Christiantiy are:<br></h2>
+        <p id="dl">
+
+            <dl id="listtype">
+
+                <dt id="textcolor">Compassion and Mercy- </dt>
+                <dd><span id="text">An important aspect of Jesus' ministry was his push to change the lives of the lowest people.</span></dd>
+
+                <dt id="textcolor">Human Rights-</dt>
+                <dd><span id="text"> The concept and idea of human rights for all and equality, comes exclusively from the biblical doctrine that staes all are created in the image of God.</span> </dd>
+
+                <dt id="textcolor">Slavery-</dt>
+                <dd><span id="text">While it is true that Christians have owned slaves in history, it is also true that it was a perversion of biblical teaching. Christians were the first group in history to oppose systematical slavery. Early Christians purchased slaves in the markets simply to set them free.</span></dd>
+
+                <dt id="textcolor">Women-</dt>
+                <dd><span id="text">Christianity gave women farther greater security as it was the first religion to not force widows to marry. Widows were also supported financially and honored  so that they were not pressured to remarry if they didn't want to. The church allowed widows to maintain their husband's estate. </span></dd>
+
+                <dt id="textcolor">Children-</dt>
+                <dd><span id="text">The Christian church brought an end to infanctide and began the modern pro-life movement.</span></dd>
+
+                <dt id="textcolor">Education-</dt>
+                <dd><span id="text">When Christianity began, there was an importance on the writting. But Education for everyone sprung with the Protestant Reformation.</span></dd>
+
+                <dt id="textcolor">Science and Technology</dt>
+                <dd><span id="text">Christianity pioneered technological and scientifical advancements in the western world. Also, it helped that almost all major scientist that led the way to today were not only theist,<i>(Believer of God or Gods,)</i> they were christians like: <a  id="colour" href="https://www.biography.com/people/isaac-newton-9422656"> Newton,</a> <a id="colour" href="https://www.biography.com/people/louis-pasteur-9434402">Pasteur,</a> <a id="colour" href="https://www.britannica.com/biography/Johannes-Kepler">Kepler,</a> and <a id="colour" href="https://www.biography.com/people/blaise-pascal-9434176">Pascal.</a>  </span></dd>
+
+                <dt id="textcolor">Building the Western World</dt>
+                <dd><span id="text">Christianity is an overwhelmingly Western religon, and moreover, the framers [Founding Fathers] were overwhelmingly Christian, with only <span id="number">4</span> out of <span id="number">55</span> of them being unfilliated, and the ones that are poured Christianity into thier work, The Constitution, even if you dont support Church and State, many biblical doctrines, like: <a href="https://www.britannica.com/topic/equality-human-rights" target="_black" id="colourr">Equality</a>, <a href="https://www.americanbar.org/content/dam/aba/migrated/publiced/features/Part1DialogueROL.authcheckdam.pdf" target="_blank" id="colourr">Rule of Law</a>, and <a href="https://www.history.com/topics/checks-and-balances" target="_blank" id="colourr">Checks and Balances</a> [Although for checks and balance its less of a direct pull than the other two, but rather a direct result of the biblical doctrine of the sinfulness of mankind.] These are only a few of the words from the bible that are imputted into Western Goverment and life.</dd>
+
+        </p>
+
+        </dl>
+    </div>
+
+    <br>
+
+    <h4 id="expand">The expansion of Christianity</h4>
+
+    <div class="w3-border" id="text3">
+
+        <h5 style="text-align: center" class="w3-text-amber">The Effect of Christianity </h5>
+        <p id="text4">
+            From 4 B.C., 2 thousand years ago, till today, Christianity
+            <br> spread its wings, flying from country to country, changing the
+            <br> entire world as it passes. From the chartiable contributions
+            <br> it created, to the improvement to modern man, to the creation of
+            <br> Western world, its endownment on the Earth is tremendous for all of us
+            <br> Atheism, and Theists alike. As it continues to revoltionize the people
+            <br> and improve the well being of not only, people in the west, but also
+            <br> people that are stuck in the lowest of lows on the Earth. It will continue to set,
+            <br> and has already set a precedent on humanity.
+            <br> Though the detest from many prominant figures and mocks from Anti-Religous
+            <br> and Anti-Abrahamic groups. But with more than 2.4 Billion followers,
+            <br> and growth surging, even in this day and age. Christianity will prove it purpose and importance
+            <br>
+
+        </p>
+    </div>
+
+    <div>
+
+        <video class="w3-border w3-card-4" style="border-radius:3px;" width="600" controls>
+            <source src="AC.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="w3-container w3-center">
+
+    </div>
+
+    <br>
+    <br>
+
+</body>
+
+</html>
